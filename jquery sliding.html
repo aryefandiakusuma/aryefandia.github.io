@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ayi_style.css">
+    <title>Sliding</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="processor">
+        <div align="left" class="mouse"> HTML!</div>
+        <div class="keyboard">
+            <p align="center">Bahasa yang digunakan untuk membuat halaman web. Bagi yang berkecimpung di dunia perangkat gadget dan ilmu komputer, pasti sudah tidak asing lagi dengan berbagai kode di dalamnya. HTML adalah kependekan dari Hypertext Markup Language. </p>
+        </div>
+    </div>
+
+    <style>
+.mouse{
+    font-family: Times New Roman;
+    font-style: italic;
+    font-size: 30px;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #2192FF;
+    cursor: pointer;
+    box-shadow: 5px 10px 16px 0px rgb(0 0 0 / 20%);
+    background-color: white;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    cursor: pointer;
+    
+
+}
+body{
+    display: block;
+    margin: 8px;
+    background-color: aqua;
+}
+.processor{
+    margin: 8px 15px;
+}
+.keyboard{
+    box-shadow: 5px 10px 16px 0px rgb(0 0 0 / 20%);
+    background-color: #A7FFE4;
+}
+
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $(".mouse").click(function(){
+        $(".keyboard").slideToggle("slow");
+    });
+});
+</script>
+</body>
+</html>
